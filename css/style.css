@@ -31,18 +31,25 @@ li{
 }
 
 .app footer{
+    display: flex;
+    justify-content: space-between;
     height: 90px;
+    
     background-color: rgb(40, 40, 40, 100);
 }
 
 main .sidebar{
+    
+    flex-direction: column;
+    display: flex;
+    height: calc(100vh - 90px);
     background-color: black;
 }
 
 .sidebar-logo {
     margin-top:10px;
     margin-left: 20px;
-    width: 180px;
+    width: 120px;
 }
 
 .icon{
@@ -55,22 +62,32 @@ main .sidebar{
 }
 
 .playlist{
+   flex-grow: 1;
+    flex-shrink: 0;
+    overflow: auto;
     margin-top:20px;
     margin-left:20px;
 }
 
 .crea-playlist, .nome-playlist{
-    margin-top:15px;
+   margin-top:15px;
 }
 
 .sidebar-bottom{
-    position: absolute;
-    bottom: 100px;
+    margin-top: 360px;
+    
+    
+}
+
+.installa, .nome-utente{ 
+    flex-wrap: wrap; 
+    flex-grow: 1; 
+   
 }
 
 main .content{
     background-color: rgb(20, 25, 33, 100);
-    overflow-y:scroll;
+    overflow-y: scroll;
     height: 100%;
 
 }
@@ -84,16 +101,116 @@ main .content{
 
 
 .upgrade button{
+    margin-right:10px;
     padding:5px;
     margin-top:20px;
     border-radius:20px;
     float: right;
 }
 
+.recently-title{
+    display: inline-block;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.recently-played{
+    
+    margin-top: 40px;
+    margin-left:30px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:flex-start;
+    margin-bottom:40px;
+}
+
+.recently-played div, .per-john-img div, .artisti-popolari div{
+    text-align: center;
+}
+
+.p{
+    padding-left:30px;
+}
+
+.recently-played img{
+    width: 150px;
+    height: 150px;
+}
+
+.per-john-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.per-john-img{
+    
+    margin-top: 40px;
+     flex-wrap: wrap;
+     display: flex;
+     margin-left:30px;
+     justify-content:flex-start
+}
+
+.artisti-popolari img{
+    width: 150px;
+    height: 150px;
+    border-radius:80px;
+}
+
+.artisti-popolari{
+ margin-top: 40px;
+ flex-wrap: wrap;
+ display: flex;
+ margin-left:30px;
+ justify-content:flex-start
+}
+
+.artisti-title{
+    display: inline-block;
+    padding-left: 50px;
+    padding-top: 50px;
+}
 
 .menu{
     margin-top: 80px;
     padding-left: 500px;
     display: inline-block;
     color: white;
+}
+
+.album-icon img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.descrizione-riproduzione{
+    display: inline-block;
+}
+
+
+
+.player-button{
+    display: inline-block;
+    text-align: center;
+    padding-top:20px;
+    font-size:20px;
+   
+}
+
+.player-button hr{
+    text-align: center;
+    width: 300px;
+    
+}
+
+.volume{
+    display: inline;
+    text-align: center;
+    padding-top:40px;
+    padding-left:20px;
+    margin-right: 10px;
+    font-size:14px;
+   
 }
