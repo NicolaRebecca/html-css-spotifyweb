@@ -34,7 +34,6 @@ li{
     display: flex;
     justify-content: space-between;
     height: 90px;
-    
     background-color: rgb(40, 40, 40, 100);
 }
 
@@ -52,7 +51,13 @@ main .sidebar{
     width: 120px;
 }
 
+.home-icons{
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+
 .icon{
+    
     padding-left:20px;
     padding-top: 15px;
 }
@@ -74,10 +79,11 @@ main .sidebar{
 }
 
 .sidebar-bottom{
-    margin-top: 360px;
-    
+
+margin-top: 280px;
     
 }
+
 
 .installa, .nome-utente{ 
     flex-wrap: wrap; 
@@ -101,8 +107,10 @@ main .content{
 
 
 .upgrade button{
+    background-color: black;
+    color: white;
     margin-right:10px;
-    padding:5px;
+    padding:10px;
     margin-top:20px;
     border-radius:20px;
     float: right;
@@ -178,6 +186,20 @@ main .content{
     color: white;
 }
 
+.heart-icon, .folder-icon{
+    display:inline;
+    padding-left:10px;
+    
+    
+}
+
+.icon-left{
+    display: inline-block;
+    margin-left:50px;
+   
+   
+}
+
 .album-icon img{
     margin-top: 20px;
     margin-left: 20px;
@@ -190,6 +212,11 @@ main .content{
 }
 
 
+.music-bar{
+    width: 400px;
+    height: 1px;
+     background-color: white;
+}
 
 .player-button{
     display: inline-block;
@@ -199,11 +226,30 @@ main .content{
    
 }
 
+.music-player{
+    font-size:12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-bar{
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.installa hr{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
 .player-button hr{
     text-align: center;
     width: 300px;
     
 }
+
 
 .volume{
     display: inline;
@@ -214,3 +260,19 @@ main .content{
     font-size:14px;
    
 }
+
+.icon:hover, .nome-playlist:hover{
+    color:grey
+}
+
+.menu li:hover{
+    color: green;
+}
+
+.player-button i:hover{
+    color: grey;
+}
+
+
+
+
