@@ -130,6 +130,41 @@ main .content{
     display: flex;
     justify-content:flex-start;
     margin-bottom:40px;
+
+}
+
+.recently-played i:hover {
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.5);
+   
+}
+
+.per-john-img i:hover {
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.5);
+    
+}
+
+.artisti-popolari i:hover {
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.5);
+    
+}
+
+
+
+.fa-play-circle{
+    font-size: 40px;
+    color: springgreen;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .recently-played div, .per-john-img div, .artisti-popolari div{
@@ -137,7 +172,9 @@ main .content{
 }
 
 .p{
-    padding-left:30px;
+    margin-right: 20px;
+    position: relative;
+    /* padding-left:30px; */
 }
 
 .recently-played img{
@@ -148,6 +185,10 @@ main .content{
 .per-john-img img{
     width: 150px;
     height: 150px;
+}
+
+.per-john-title{
+    padding-left:40px;
 }
 
 .per-john-img{
@@ -213,15 +254,19 @@ main .content{
 
 
 .music-bar{
-    width: 400px;
+    margin-top:5px;
+    margin-left:5px;
+     margin-right:5px;
+    width: 350px;
     height: 1px;
      background-color: white;
 }
 
 .player-button{
+    
     display: inline-block;
     text-align: center;
-    padding-top:20px;
+    padding:20px;
     font-size:20px;
    
 }
@@ -232,11 +277,6 @@ main .content{
     justify-content: space-between;
 }
 
-.music-bar{
-    margin-top:5px;
-    margin-left:5px;
-    margin-right:5px;
-}
 
 .installa hr{
     margin-top:10px;
